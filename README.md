@@ -30,6 +30,14 @@ The architecture of AI LifeLens integrates computer vision, OCR, and Gemini AI t
 
 ![Architecture Diagram](architecture.png)
 ---
+
+## Project Overview
+
+The overview of AI LifeLens solves real time problems.
+
+![Overview Image](Overview.png)
+---
+
 # Real World Applications
 
 ### Healthcare
