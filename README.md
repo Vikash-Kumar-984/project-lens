@@ -4,6 +4,12 @@ AI LifeLens is a multimodal AI assistant powered by **Google Gemini** that helps
 The system analyzes images, detects objects, extracts text using OCR, and generates intelligent explanations using Gemini's multimodal reasoning.
 
 ---
+## Project Overview
+
+The overview of AI LifeLens solves real time problems.
+
+![Overview Image](Overview.png)
+---
 
 # Problem
 
@@ -64,12 +70,6 @@ The architecture of AI LifeLens integrates computer vision, OCR, and Gemini AI t
 ![Architecture Diagram](architecture.png)
 ---
 
-## Project Overview
-
-The overview of AI LifeLens solves real time problems.
-
-![Overview Image](Overview.png)
----
 
 # Tech Stack
 
@@ -108,7 +108,10 @@ https://youtu.be/5Hnk5hhxRBc
 Follow these steps to run the project locally.
 
 ## 1. Clone the Repository
-
+```bash
+git clone https://github.com/Vikash-Kumar-984/project-lens.git
+cd AI-LifeLens
+```
 ## 2. Install Backend Dependencies
 
 Make sure Python 3.9+ is installed.
@@ -224,7 +227,3 @@ https://www.linkedin.com/in/vikash-kumar-a071a0205/
 ## License
 
 This project is developed for educational and innovation purposes.
-
-```bash
-git clone https://github.com/Vikash-Kumar-984/AI-LifeLens.git
-cd AI-LifeLens
