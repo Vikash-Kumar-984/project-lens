@@ -24,7 +24,12 @@ AI LifeLens integrates **computer vision models, OCR pipelines, and Gemini AI** 
 - Image Processing Libraries
 
 ---
+## System Architecture
 
+The architecture of AI LifeLens integrates computer vision, OCR, and Gemini AI to transform visual information into intelligent insights.
+
+![Architecture Diagram](architecture.png)
+---
 # Real World Applications
 
 ### Healthcare
