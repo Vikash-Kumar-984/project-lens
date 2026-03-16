@@ -1,27 +1,60 @@
+# AI LifeLens – Multimodal Vision Assistant
 
-AI LifeLens integrates **computer vision models, OCR pipelines, and Gemini AI** to transform visual information into meaningful insights.
+AI LifeLens is a multimodal AI assistant powered by **Google Gemini** that helps users understand complex visual information instantly.  
+The system analyzes images, detects objects, extracts text using OCR, and generates intelligent explanations using Gemini's multimodal reasoning.
 
 ---
 
-# Tech Stack
+# Problem
 
-### Frontend
-- React
-- Vite
-- HTML
-- CSS
-- JavaScript
+People often struggle to interpret visual information such as:
 
-### AI & Backend
-- Python
+- Medical prescriptions
+- Product instructions
+- Printed documents
+- Complex real-world scenes
+
+Existing tools may detect objects or extract text, but they lack **contextual understanding of the image**.
+
+---
+
+# Solution
+
+AI LifeLens solves this problem by combining:
+
 - Computer Vision
-- OCR (Tesseract)
-- Google Gemini API
+- OCR (Optical Character Recognition)
+- Gemini Multimodal AI
 
-### APIs & Tools
-- Web Camera API
-- Speech Recognition
-- Image Processing Libraries
+The system transforms visual information into **clear explanations and actionable insights**.
+
+---
+
+# Key Features
+
+- Image understanding using computer vision
+- OCR text extraction from prescriptions and documents
+- Gemini-powered contextual explanation
+- Voice interaction support
+- Real-time image analysis
+
+---
+
+# System Architecture
+
+User → Upload Image / Camera  
+↓  
+Frontend (React + Vite)  
+↓  
+Image Processing Layer  
+↓  
+Computer Vision + OCR  
+↓  
+Gemini AI (Multimodal Reasoning)  
+↓  
+AI Explanation & Insights  
+↓  
+Voice Output / UI Display
 
 ---
 ## System Architecture
@@ -38,76 +71,144 @@ The overview of AI LifeLens solves real time problems.
 ![Overview Image](Overview.png)
 ---
 
-# Real World Applications
+# Tech Stack
 
-### Healthcare
-Understand medical prescriptions and health documents.
-
-### Accessibility
-Assist visually impaired users in understanding their environment.
-
-### Education
-Explain diagrams, charts, and educational visuals.
-
-### Everyday Use
-Understand product instructions and labels.
-
----
-
-# Challenges We Faced
-
-- Integrating multiple AI systems (vision + OCR + LLM)
-- Processing images efficiently for real-time analysis
-- Generating meaningful explanations from visual inputs
-- Ensuring smooth interaction between frontend and AI models
-
----
-
-# What We Learned
-
-Through this project we learned:
-
-- Multimodal AI integration
-- Computer vision pipelines
-- OCR and text extraction
-- AI-assisted user interaction
-- Building real-world AI applications
-
----
-
-# Future Improvements
-
-- Mobile app version
-- Enhanced real-time scene understanding
-- Multi-language support
-- Wearable device integration
-- Improved accessibility features
-
----
-
-# Demo
-
-Upload an image or use the camera to analyze real-world scenes and receive AI-powered insights.
-
----
-
-# Built With
-
-- Python
-- JavaScript
+Frontend
 - React
 - Vite
+- HTML
+- CSS
+- JavaScript
+
+Backend
+- Python
+- Flask
+
+AI Technologies
+- Google Gemini API
 - Computer Vision
 - OCR (Tesseract)
-- Google Gemini API
+
+Tools & APIs
 - Web Camera API
 - Speech Recognition
 
 ---
 
-# Author
+# Demo Video
 
-**Vikash Kumar**
+Watch the project demo here:
+
+https://youtu.be/5Hnk5hhxRBc
+
+---
+
+# Reproducible Setup Instructions
+
+Follow these steps to run the project locally.
+
+## 1. Clone the Repository
+
+## 2. Install Backend Dependencies
+
+Make sure Python 3.9+ is installed.
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 3. Install Frontend Dependencies
+
+Make sure Node.js is installed.
+
+```bash
+npm install
+```
+
+---
+
+## 4. Set Up Gemini API Key
+
+Create a `.env` file in the project root and add your Gemini API key.
+
+```
+GEMINI_API_KEY=your_api_key_here
+```
+
+You can obtain an API key from:
+
+https://ai.google.dev/
+
+---
+
+## 5. Run Backend Server
+
+Start the backend server.
+
+```bash
+python app.py
+```
+
+The backend will run at:
+
+```
+http://localhost:5000
+```
+
+---
+
+## 6. Run Frontend
+
+Start the frontend development server.
+
+```bash
+npm run dev
+```
+
+The application will start at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 7. Using the Application
+
+1. Upload an image or capture one using the camera  
+2. The system extracts text and visual information  
+3. Gemini analyzes the image content  
+4. AI LifeLens generates an explanation and insights  
+5. The results are displayed in the interface
+
+---
+
+## Demo
+
+Watch the project demo:
+
+https://youtu.be/5Hnk5hhxRBc
+
+---
+
+## Built With
+
+- Python  
+- React  
+- Vite  
+- Computer Vision  
+- OCR (Tesseract)  
+- Google Gemini API  
+- Web Camera API  
+- Speech Recognition  
+
+---
+
+## Author
+
+Vikash Kumar  
 
 Portfolio  
 https://vikash-kumar-984.github.io/Vikash-Portfolio/
@@ -120,6 +221,10 @@ https://www.linkedin.com/in/vikash-kumar-a071a0205/
 
 ---
 
-# License
+## License
 
 This project is developed for educational and innovation purposes.
+
+```bash
+git clone https://github.com/Vikash-Kumar-984/AI-LifeLens.git
+cd AI-LifeLens
